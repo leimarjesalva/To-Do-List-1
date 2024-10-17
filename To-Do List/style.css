@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: transparent;
+  background-image: url("1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Jockey One';font-size: 22px;
+
+}
+
+.container {
+  display: flex;
+  max-width: auto;
+  margin: auto;
+  padding:  150px;
+  justify-content: center;
+  
+}
+
+.categories, .task-section, .analytics {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.categories {
+  width: 20%;
+  margin-right: 10px;
+}
+
+.task-section {
+  width: 60%;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.analytics {
+  width: 20%;
+}
+
+h1, h2, h3, h4 {
+  margin: 0 0 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: #121212;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.delete-btn {
+  background-color: #dc3545;
+}
+
+input[type="text"], input[type="date"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.category-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.category-checkboxes label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.analytics p {
+  margin-top: 10px;
+}
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    cursor: pointer;
+    float: right;
+    font-size: 20px;
+}
+

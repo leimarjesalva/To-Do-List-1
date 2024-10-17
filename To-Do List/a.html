@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Todo List</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Jockey One' rel='stylesheet'> <link href='https://fonts.googleapis.com/css?family=Honk' rel='stylesheet'>
+  
+</head>
+<body>
+  <div class="container">
+    <div class="categories">
+      <h3>Categories</h3>
+      <input type="text" placeholder="New Category">
+      <button class="add-category">Add</button>
+      <h4>Category List</h4>
+      <ul class="category-list"></ul>
+    </div>
+    
+    <div class="task-section">
+      <h1>Advanced To-do List</h1>
+      <div class="task-input">
+        <input type="text" placeholder="New Task">
+        <input type="date">
+        <h4>Categories:</h4>
+        <div class="category-checkboxes"></div>
+        <button class="add-task">Add Task</button>
+      </div>
+      <h2>Tasks List</h2>
+      <ul class="task-list"></ul>
+    </div>
+    
+    <div class="analytics">
+        <h3>Analytics</h3>
+        <canvas id="analyticsChart"></canvas>
+        <p id="overall-completion-rate">Overall Completion Rate: 0%</p>
+        <div class="category-completion-rates"></div>
+    </div>
+    
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
